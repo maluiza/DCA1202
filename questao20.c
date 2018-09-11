@@ -9,7 +9,7 @@ int main()
 {
   int i;
 
-  GC_INIT();	/* Optional on Linux/X86; see below.  */
+  GC_INIT();
   for (i = 0; i < 10000000; ++i)
    {
      int **p = (int **) GC_MALLOC(sizeof(int *));
